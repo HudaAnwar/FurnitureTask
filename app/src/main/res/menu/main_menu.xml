@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home_toggle"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/favorite"
+        android:enabled="true"
+        android:icon="@drawable/favorite_toggle"
+        android:title="@string/favorite"/>
+    <item
+        android:id="@+id/cart"
+        android:enabled="true"
+        android:icon="@drawable/cart"
+        android:title="@string/cart" />
+    <item
+        android:id="@+id/orders"
+        android:enabled="true"
+        android:icon="@drawable/orders_toggle"
+        android:title="@string/orders"/>
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/profile_toggle"
+        android:title="@string/profile"/>
+
+</menu>

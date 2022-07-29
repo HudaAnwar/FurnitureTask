@@ -2,11 +2,43 @@
     <string name="app_name">FurnitureTask</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="login_fragment_label">Login Fragment</string>
+    <string name="create_account_fragment_label">Create Account Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="login_image">login image</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="email_or_phone_num">البريد الإلكتروني أو رقم الهاتف</string>
+    <string name="password">كلمة السر</string>
+    <string name="forgot_password"><u>نسيت كلمة المرور؟</u></string>
+    <string name="facebook_login">تسجيل عن طريق الفيسبوك</string>
+    <string name="google_login">تسجيل عن طريق جوجل</string>
+    <string name="register_by">أو سجل عن طريق</string>
+    <string name="create_new_account">ليس لديك حساب؟ تسجيل</string>
+    <string name="create_account">إنشاء حساب</string>
+    <string name="name">الإسم</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="phone_num">رقم الهاتف</string>
+    <string name="address">العنوان</string>
+    <string name="if_you_have_account_login">لديك حساب؟ سجل الدخول</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">الرئيسية</string>
+    <string name="favorite">المفضلة</string>
+    <string name="cart">مشترياتي</string>
+    <string name="orders">الطلبات السابقة</string>
+    <string name="profile">الحساب</string>
+    <string name="furniture_search">بحث عن أثاث</string>
+    <string name="sofa">الأرائك</string>
+    <string name="discover_best_furniture">إكتشف أحسن الأثاث</string>
+    <string name="camera">camera</string>
+    <string name="gift">gift</string>
+    <string name="furniture_category">furniture category</string>
+    <string name="view_more">مشاهدة المزيد</string>
+    <string name="offers">عروض التوفير</string>
+    <string name="modern_living_room">أنتريه مودرن</string>
+    <string name="offer_price">سعر العرض&#160;: &#160;</string>
 </resources>
