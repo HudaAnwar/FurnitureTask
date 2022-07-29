@@ -3,10 +3,43 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable-anydpi/show.xml" value="0.165" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/diagonal_line.xml" value="0.155" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/favorite_toggle.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/home_toggle.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_bed.xml" value="0.161" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_chair_alt.xml" value="0.161" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_favorite.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_favorite_2.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_home.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_home_2.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_kitchen.xml" value="0.161" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_profile.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_profile_2.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_report.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_report_2.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_sofa.xml" value="0.161" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_table.xml" value="0.161" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/password_toggle.xml" value="0.165" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/profile_toggle.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/report_toggle.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/rounded_rectangle.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/font/tajawal.xml" value="0.10364583333333334" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout-ar/fragment_login.xml" value="0.20416666666666666" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_cart.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_create_account.xml" value="0.22" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_favorite.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_first.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_home.xml" value="0.16721672167216722" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_orders.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_profile.xml" value="0.12" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_second.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/item_furniture.xml" value="1.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/menu/main_menu.xml" value="0.33" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/menu/menu_main.xml" value="0.1" />
       </map>
     </option>
   </component>

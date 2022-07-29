@@ -3,26 +3,58 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.huda.furnituretask.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/loginFragment"
+        android:name="com.huda.furnituretask.presentation.ui.login.LoginFragment"
+        android:label="@string/login_fragment_label"
+        tools:layout="@layout/fragment_login">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/createNewAccount"
+            app:destination="@id/createAccountFragment" />
+        <action android:id="@+id/viewHome"
+            app:destination="@+id/home"/>
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.huda.furnituretask.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/createAccountFragment"
+        android:name="com.huda.furnituretask.presentation.ui.create_account.CreateAccountFragment"
+        android:label="@string/create_account_fragment_label"
+        tools:layout="@layout/fragment_create_account">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/loginToApp"
+            app:destination="@id/loginFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.huda.furnituretask.presentation.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action android:id="@+id/backToLogin_test"
+            app:destination="@id/loginFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/favorite"
+        android:name="com.huda.furnituretask.presentation.ui.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.huda.furnituretask.presentation.ui.cart.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/orders"
+        android:name="com.huda.furnituretask.presentation.ui.orders.ORdersFragment"
+        android:label="fragment_orders"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.huda.furnituretask.presentation.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
 </navigation>
