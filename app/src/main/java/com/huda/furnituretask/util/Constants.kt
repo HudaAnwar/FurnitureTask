@@ -21,6 +21,8 @@ object Constants {
         FurnitureCategory(R.drawable.ic_sofa, "الأرائك"),
         FurnitureCategory(R.drawable.ic_bed, "سراير"),
     )
+    const val BASE_URL = "https://backend.forhomi.com/api/"
+
 }
 
 data class FurnitureCategory(var categoryImage: Int, var categoryName: String)

@@ -8,10 +8,14 @@ data class Customer(
     var passwordConfirmation: String,
     var language: String,
     var address: String,
-    var avatar: String,
-    var countryId: Int,
-    var governorateId: Int,
+    var avatar: String="",
+    var countryCode: String,
+//    var governorateId: Int,
 //region_id:13
     var birthday: String,//1994-08-18
-    var gender: String//male
+    var gender: String,//male
+    var age:String="",
+    var id: Int=0,
+    var userId:Int=0,
+    var token:String=""
 )

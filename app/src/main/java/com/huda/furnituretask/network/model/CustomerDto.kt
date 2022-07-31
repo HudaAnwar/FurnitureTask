@@ -18,14 +18,20 @@ data class CustomerDto(
     @SerializedName("address")
     var address: String,
     @SerializedName("avatar")
-    var avatar: String,
-    @SerializedName("country_id")
-    var countryId: Int,
-    @SerializedName("governorate_id")
-    var governorateId: Int,
+    var avatar: String="",
+    @SerializedName("country_code")
+    var countryCode: String,
 //region_id:13
     @SerializedName("birthday")
     var birthday: String,//1994-08-18
     @SerializedName("gender")
-    var gender: String//male
+    var gender: String,//male
+    @SerializedName("age")
+    var age: String="",
+    @SerializedName("id")
+    var id: Int=0,
+    @SerializedName("user_id")
+    var userId: Int=0,
+    @SerializedName("token")
+    var token: String=""
 )
