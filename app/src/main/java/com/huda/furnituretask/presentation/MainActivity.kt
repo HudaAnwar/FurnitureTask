@@ -1,6 +1,7 @@
 package com.huda.furnituretask.presentation
 
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -12,11 +13,22 @@ import android.view.MenuItem
 import android.view.View
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.ui.NavigationUI
+import com.google.gson.GsonBuilder
 import com.huda.furnituretask.R
 import com.huda.furnituretask.databinding.ActivityMainBinding
 import com.huda.furnituretask.interfaces.NavigationBarVisibilityListener
+import com.huda.furnituretask.network.AuthService
+import com.huda.furnituretask.network.FurnitureService
+import com.huda.furnituretask.network.model.CustomerDto
+import com.huda.furnituretask.network.model.LoginInformation
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers.IO
+import kotlinx.coroutines.launch
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import kotlin.math.log
 
-class MainActivity : AppCompatActivity(),NavigationBarVisibilityListener {
+class MainActivity : AppCompatActivity(), NavigationBarVisibilityListener {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     lateinit var binding: ActivityMainBinding
@@ -26,6 +38,7 @@ class MainActivity : AppCompatActivity(),NavigationBarVisibilityListener {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 //
 //        setSupportActionBar(binding.toolbar)
 
@@ -39,11 +52,52 @@ class MainActivity : AppCompatActivity(),NavigationBarVisibilityListener {
 //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                .setAction("Action", null).show()
 //        }
+
+        val retrofit = Retrofit.Builder()
+            .baseUrl("https://backend.forhomi.com/api/")
+            .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
+            .build()
+
+        val authService = retrofit
+            .create(AuthService::class.java)
+        val furnitureService = retrofit
+            .create(FurnitureService::class.java)
+
+        CoroutineScope(IO).launch {
+            val authResponse = authService.register(
+                CustomerDto(
+                    "huda",
+                    "huda.anwar94@gmail.com",
+                    "01025387616",
+                    "123456",
+                    "123456",
+                    "en",
+                    "qwrd",
+                    "",
+                    "+20",
+                    "1994-04-30",
+                    "Female",
+                    "28",
+                    0,
+                    0,
+                    ""
+                )
+            )
+            val loginResponse= authService.login(LoginInformation("somaya@gmail.com","123456"))
+            val homeResponse = furnitureService.getHome()
+            Log.d("HomeService", "onCreate: ${homeResponse.body()?.data?.categories}")
+
+            Log.d(
+                "MainActivity2", "onCreate: ${
+                    loginResponse.body()
+                } "
+            )
+        }
     }
 
     override fun navbarVisibility(isVisible: Int) {
         binding.bottomNavigation.visibility = isVisible
-        binding.bottomNavigation.itemIconTintList=null
+        binding.bottomNavigation.itemIconTintList = null
     }
 
     override fun navGraphVisibility(isVisible: Int) {

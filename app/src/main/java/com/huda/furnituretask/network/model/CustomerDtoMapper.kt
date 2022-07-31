@@ -10,15 +10,18 @@ class CustomerDtoMapper : DomainMapper<CustomerDto, Customer> {
                 name = name,
                 email = email,
                 address = address,
-                avatar = avatar,
                 birthday = birthday,
-                countryId = countryId,
+                countryCode = countryCode,
                 gender = gender,
-                governorateId = governorateId,
                 language = language,
                 password = password,
                 passwordConfirmation = passwordConfirmation,
-                phone = phone
+                phone = phone,
+                avatar = avatar,
+                token = token,
+                age = age,
+                id = id,
+                userId = userId,
             )
         }
     }
@@ -29,15 +32,18 @@ class CustomerDtoMapper : DomainMapper<CustomerDto, Customer> {
                 name = name,
                 email = email,
                 address = address,
-                avatar = avatar,
                 birthday = birthday,
-                countryId = countryId,
+                countryCode = countryCode,
                 gender = gender,
-                governorateId = governorateId,
                 language = language,
                 password = password,
                 passwordConfirmation = passwordConfirmation,
-                phone = phone
+                phone = phone,
+                avatar = avatar,
+                token = token,
+                age = age,
+                id = id,
+                userId = userId,
             )
         }
     }
