@@ -144,18 +144,24 @@
                     android:background="@color/light_grey" />
             </LinearLayout>
 
-            <com.google.android.material.button.MaterialButton
+            <com.facebook.login.widget.LoginButton
                 android:id="@+id/facebook_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:backgroundTint="@color/blue"
-                app:icon="@drawable/facebook"
-                android:fontFamily="@font/tajawal_medium"
-                app:iconGravity="textEnd"
-                app:iconSize="24dp"
-                android:padding="10dp"
-                android:text="@string/facebook_login" />
+                android:fontFamily="@font/tajawal_medium" />
+            <!--            <com.google.android.material.button.MaterialButton-->
+            <!--                android:id="@+id/facebook_login"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="16dp"-->
+            <!--                android:backgroundTint="@color/blue"-->
+            <!--                app:icon="@drawable/facebook"-->
+            <!--                android:fontFamily="@font/tajawal_medium"-->
+            <!--                app:iconGravity="textEnd"-->
+            <!--                app:iconSize="24dp"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:text="@string/facebook_login" />-->
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/google_login"
@@ -163,12 +169,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:backgroundTint="@color/red"
-                app:iconSize="20dp"
-                app:iconGravity="textEnd"
-                app:icon="@drawable/google"
                 android:fontFamily="@font/tajawal_medium"
                 android:padding="10dp"
-                android:text="@string/google_login" />
+                android:text="@string/google_login"
+                app:icon="@drawable/google"
+                app:iconGravity="textEnd"
+                app:iconSize="20dp" />
 
             <TextView
                 android:id="@+id/create_new_account"

@@ -41,4 +41,9 @@
     <string name="offers">عروض التوفير</string>
     <string name="modern_living_room">أنتريه مودرن</string>
     <string name="offer_price">سعر العرض&#160;: &#160;</string>
+    <string name="server_client_id">357680230328-8vlcqrov0dun5e36p8n86ediptf72odo.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">1714163928969759</string>
+    <string name="fb_login_protocol_scheme">fb1714163928969759</string>
+    <string name="facebook_client_token">24e06eca68e650f18196617430e7af88</string>
+    <string name="branch_type">نوع الفرع</string>
 </resources>

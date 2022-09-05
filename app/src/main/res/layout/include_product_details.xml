@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:id="@+id/product_details_container"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sofas and arm chairs"
+        android:textAlignment="viewStart"
+        android:theme="@style/headerMediumStyleDarkGray"
+        app:layout_constraintEnd_toStartOf="@+id/rating"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="1"
+        android:theme="@style/RatingBar"
+        app:layout_constraintEnd_toStartOf="@id/rate_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/tajawal_regular"
+        android:text="تقييم"
+        android:textColor="@color/color_gray_5"
+        android:textSize="12sp"
+        app:drawableEndCompat="@drawable/ic_outline_rate_review_24"
+        app:drawableTint="@color/color_gray_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/rating"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/gallery_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginVertical="10dp"
+        android:src="@drawable/art_house_small_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/gallery_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/tajawal_bold"
+        android:text="آرت هاوس"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gallery_img"
+        app:layout_constraintStart_toEndOf="@id/gallery_img"
+        app:layout_constraintTop_toTopOf="@id/gallery_img" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/tajawal_light"
+        android:text="الكراسي لدينا مصممة بالأبعاد المناسبة لتوفر لك الراحة والجاذبية. حتى الكراسي القابلة للطي والكراسي الخارجية تتمتع بالتصاميم الجذابة"
+        android:textAlignment="viewStart"
+        android:textColor="@color/color_gray_23"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gallery_img" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/tajawal_regular"
+        android:text="41.99 جنيه"
+        android:textColor="@color/light_slate_grey"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description" />
+
+    <TextView
+        android:id="@+id/colors_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/tajawal_regular"
+        android:text="الألوان المتاحة"
+        android:textColor="@color/color_gray_5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/colors_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/colors_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/colors_title"
+        app:layout_constraintTop_toTopOf="@id/colors_title"
+        tools:itemCount="1" />
+
+    <TextView
+        android:id="@+id/product_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tajawal_bold"
+        android:text="تفاصيل المنتج"
+        android:textColor="@color/color_gray_5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/colors_title" />
+
+    <TextView
+        android:id="@+id/product_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/tajawal_regular"
+        android:text="الأبعاد: 45*55*110 \n الخامة: ستيل دهانالكتروستاتيك \n صنع في: مصر"
+        android:textColor="@color/color_gray_6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_details_title" />
+
+    <TextView
+        android:id="@+id/rate_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/tajawal_bold"
+        android:text="1254 تقييم"
+        android:textColor="@color/color_gray_2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_details" />
+
+    <TextView
+        android:id="@+id/your_rate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/tajawal_regular"
+        android:text="تقييمك"
+        android:textColor="@color/color_gray_5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rate_count" />
+
+    <RatingBar
+        android:id="@+id/your_rating"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:numStars="5"
+        android:rating="4"
+        android:stepSize="1"
+        android:theme="@style/RatingBar"
+        app:layout_constraintBottom_toBottomOf="@id/your_rate_title"
+        app:layout_constraintStart_toEndOf="@id/your_rate_title"
+        app:layout_constraintTop_toTopOf="@id/your_rate_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/tajawal_regular"
+        android:text="تقييم"
+        android:textColor="@color/color_gray_5"
+        android:textSize="12sp"
+        app:drawableEndCompat="@drawable/ic_outline_rate_review_24"
+        app:drawableTint="@color/color_gray_5"
+        app:layout_constraintBottom_toBottomOf="@id/your_rating"
+        app:layout_constraintStart_toEndOf="@id/your_rating"
+        app:layout_constraintTop_toTopOf="@id/your_rating" />
+
+    <EditText
+        android:id="@+id/your_review_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box_round_light"
+        android:gravity="top|start"
+        android:hint="شارك تقييمك"
+        android:textSize="12sp"
+        android:textColorHint="@color/color_gray_4"
+        android:textColor="@color/color_gray_2"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:padding="8dp"
+        android:fontFamily="@font/tajawal_regular"
+        android:textAlignment="viewStart"
+        app:layout_constraintTop_toBottomOf="@id/your_rating" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/color_gray_8"
+        android:fontFamily="@font/tajawal_regular"
+        android:text="شارك التقييم"
+        android:textColor="@color/color_gray_15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/your_review_edit_text" />
+
+    <TextView
+        android:id="@+id/reviews_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/tajawal_bold"
+        android:text="التقييمات"
+        android:textColor="@color/color_gray_24"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_review" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reviews_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/reviews_title"
+        tools:itemCount="2" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/color_gray_8"
+        android:fontFamily="@font/tajawal_regular"
+        android:text="إضافة إلى سلة المشتريات"
+        android:textColor="@color/color_gray_15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reviews_recycler_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,16 +10,18 @@
 
     <ImageView
         android:id="@+id/type_img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:gravity="center"
         android:src="@drawable/ic_sofa"
-        android:contentDescription="@string/furniture_category"
-        app:tint="@color/light_slate_grey" />
+        android:contentDescription="@string/furniture_category" />
 
     <TextView
         android:id="@+id/type_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:fontFamily="@font/tajawal_light"
         android:text="@string/sofa"
         android:textColor="@color/light_slate_grey" />
