@@ -14,8 +14,9 @@
         <action
             android:id="@+id/createNewAccount"
             app:destination="@id/createAccountFragment" />
-        <action android:id="@+id/viewHome"
-            app:destination="@+id/home"/>
+        <action
+            android:id="@+id/viewHome"
+            app:destination="@+id/home" />
     </fragment>
     <fragment
         android:id="@+id/createAccountFragment"
@@ -26,6 +27,9 @@
         <action
             android:id="@+id/loginToApp"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/viewHome"
+            app:destination="@+id/home" />
     </fragment>
 
     <fragment
@@ -33,8 +37,28 @@
         android:name="com.huda.furnituretask.presentation.ui.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
-        <action android:id="@+id/backToLogin_test"
-            app:destination="@id/loginFragment"/>
+
+        <action
+            android:id="@+id/view_categories"
+            app:destination="@id/categoriesFragment" />
+        <action
+            android:id="@+id/view_saves"
+            app:destination="@id/savesFragment" />
+        <action
+            android:id="@+id/view_discounts"
+            app:destination="@id/discountsFragment" />
+        <action
+            android:id="@+id/view_offers"
+            app:destination="@id/offersFragment" />
+        <action
+            android:id="@+id/view_galleries"
+            app:destination="@id/galleriesFragment" />
+        <action
+            android:id="@+id/view_gallery_details"
+            app:destination="@id/galleryDetailsFragment" />
+        <action
+            android:id="@+id/view_product_details"
+            app:destination="@id/productDetailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/favorite"
@@ -55,6 +79,60 @@
         android:id="@+id/profile"
         android:name="com.huda.furnituretask.presentation.ui.profile.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/backToLogin"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.huda.furnituretask.presentation.ui.categories.CategoriesFragment"
+        android:label="categories_fragment"
+        tools:layout="@layout/categories_fragment" />
+    <action
+        android:id="@+id/backToHome"
+        app:destination="@id/home" />
+    <fragment
+        android:id="@+id/savesFragment"
+        android:name="com.huda.furnituretask.presentation.ui.saves.SavesFragment"
+        android:label="saves_fragment"
+        tools:layout="@layout/saves_fragment" />
+    <fragment
+        android:id="@+id/discountsFragment"
+        android:name="com.huda.furnituretask.presentation.ui.discounts.DiscountsFragment"
+        android:label="discounts_fragment"
+        tools:layout="@layout/discounts_fragment" />
+    <fragment
+        android:id="@+id/offersFragment"
+        android:name="com.huda.furnituretask.presentation.ui.offer.OffersFragment"
+        android:label="offers_fragment"
+        tools:layout="@layout/offers_fragment">
+        <action
+            android:id="@+id/view_product_details"
+            app:destination="@id/productDetailsFragment" />
 
+    </fragment>
+    <action
+        android:id="@+id/viewHome2"
+        app:destination="@id/home"
+        app:popUpTo="@id/home" />
+    <fragment
+        android:id="@+id/galleriesFragment"
+        android:name="com.huda.furnituretask.presentation.ui.galleries.GalleriesFragment"
+        android:label="galleries_fragment"
+        tools:layout="@layout/galleries_fragment">
+        <action
+            android:id="@+id/view_gallery_details"
+            app:destination="@id/galleryDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryDetailsFragment"
+        android:name="com.huda.furnituretask.presentation.ui.galleries.gallery_details.GalleryDetailsFragment"
+        android:label="gallery_details_fragment"
+        tools:layout="@layout/gallery_details_fragment" />
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.huda.furnituretask.presentation.ui.product.details.ProductDetailsFragment"
+        android:label="product_details_fragment"
+        tools:layout="@layout/product_details_fragment" />
 </navigation>

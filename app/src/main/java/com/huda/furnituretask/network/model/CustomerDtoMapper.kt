@@ -11,11 +11,7 @@ class CustomerDtoMapper : DomainMapper<CustomerDto, Customer> {
                 email = email,
                 address = address,
                 birthday = birthday,
-                countryCode = countryCode,
                 gender = gender,
-                language = language,
-                password = password,
-                passwordConfirmation = passwordConfirmation,
                 phone = phone,
                 avatar = avatar,
                 token = token,
@@ -33,11 +29,7 @@ class CustomerDtoMapper : DomainMapper<CustomerDto, Customer> {
                 email = email,
                 address = address,
                 birthday = birthday,
-                countryCode = countryCode,
                 gender = gender,
-                language = language,
-                password = password,
-                passwordConfirmation = passwordConfirmation,
                 phone = phone,
                 avatar = avatar,
                 token = token,
@@ -47,5 +39,4 @@ class CustomerDtoMapper : DomainMapper<CustomerDto, Customer> {
             )
         }
     }
-
 }

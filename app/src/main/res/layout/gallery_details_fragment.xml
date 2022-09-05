@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gallery_bg"
+    android:clipToPadding="true"
+    tools:context=".presentation.ui.galleries.gallery_details.GalleryDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/ic_back_big_icon"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/ic_share"
+                app:tint="@color/white" />
+
+            <com.github.ivbaranov.mfb.MaterialFavoriteButton
+                android:id="@+id/is_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/white"
+                app:mfb_color="white"
+                app:mfb_favorite_image="@drawable/ic_favorite_checked"
+                app:mfb_not_favorite_image="@drawable/ic_favorite"
+                app:mfb_type="heart" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gallery_img"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:elevation="1dp"
+            android:src="@drawable/art_house_small_icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/top_round_corners_bg"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="45dp">
+
+            <TextView
+                android:id="@+id/gallery_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="آرت هاوس"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/gallery_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gallery_name"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/tajawal_light"
+                android:text="الكراسي لدينا مصممة بالأبعاد المناسبة لتوفر لك الراحة والجاذبية. حتى الكراسي القابلة للطي والكراسي الخارجية تتمتع بالتصاميم الجذابة"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+
+            <RatingBar
+                android:id="@+id/rating"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gallery_description"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="1"
+                android:theme="@style/RatingBar" />
+
+            <TextView
+                android:id="@+id/rate_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gallery_description"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/rating"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/tajawal_light"
+                android:text="5000 تقييم"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:drawableEndCompat="@drawable/ic_outline_rate_review_24"
+                app:drawableTint="#656565" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rating"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/tajawal_light"
+                android:text="كيلوباترا, طريق الكورنيش, أمام إشارة كليوباترا"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:drawableStartCompat="@drawable/ic_location"
+                app:drawableTint="#353434" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

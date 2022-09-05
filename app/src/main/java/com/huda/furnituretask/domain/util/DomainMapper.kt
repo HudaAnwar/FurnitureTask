@@ -1,5 +1,8 @@
 package com.huda.furnituretask.domain.util
 
+import com.huda.furnituretask.network.model.ImageDto
+import com.huda.furnituretask.network.model.ProductDetailsDto
+
 
 interface DomainMapper<T, DomainModel> {
     fun mapToDomainModel(model: T): DomainModel

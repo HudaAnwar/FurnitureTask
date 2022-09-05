@@ -4,6 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable-anydpi/show.xml" value="0.165" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/add_to_favorite.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/box_round_gray_8.xml" value="0.1495" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/box_round_light.xml" value="0.1495" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/circle_gray_1.xml" value="0.1495" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/circle_gray_21.xml" value="0.1495" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/circle_gray_22.xml" value="0.1305" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/color_bg.xml" value="0.177" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/diagonal_line.xml" value="0.155" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/favorite_toggle.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/home_toggle.xml" value="0.1" />
@@ -11,33 +18,66 @@
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_chair_alt.xml" value="0.161" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_favorite.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_favorite_2.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_favorite_checked.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_home.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_home_2.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_kitchen.xml" value="0.161" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_outline_rate_review_24.xml" value="0.2115" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_profile.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_profile_2.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_report.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_report_2.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_sofa.xml" value="0.161" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_table.xml" value="0.161" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/ic_triangle_round.xml" value="0.1495" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/password_toggle.xml" value="0.165" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/profile_toggle.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/report_toggle.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/round_rect_gold.xml" value="0.177" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/round_rect_red.xml" value="0.177" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/rounded_background.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/rounded_rectangle.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/selector_color_picker.xml" value="0.1495" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/tab_selector.xml" value="0.1305" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/top_round_corners_bg.xml" value="0.1695" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/drawable/triangle_round_white.xml" value="0.107" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/font/tajawal.xml" value="0.10364583333333334" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout-ar/fragment_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/about_gallery_fragment.xml" value="0.33" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/categories_fragment.xml" value="0.22" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/discounts_fragment.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_cart.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_create_account.xml" value="0.22" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_favorite.xml" value="0.1" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_first.xml" value="0.20416666666666666" />
-        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_home.xml" value="0.16721672167216722" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_home.xml" value="0.16025641025641027" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_orders.xml" value="0.1" />
-        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_profile.xml" value="0.12" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/fragment_second.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/galleries_fragment.xml" value="0.25" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/gallery_details_fragment.xml" value="0.25" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/gallery_page_fragment.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/gallery_reviews_fragment.xml" value="0.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/include_product_details.xml" value="0.1675213675213675" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/include_product_images.xml" value="0.16" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/it.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/item_branch_type.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/item_color.xml" value="0.5" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/item_discount.xml" value="0.25" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/item_furniture.xml" value="1.1" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/item_gallary.xml" value="0.5" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/item_gallery.xml" value="0.33" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/item_gallery_vertical.xml" value="0.33" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/item_image.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/item_offer.xml" value="0.22" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/item_product.xml" value="0.67" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/item_save.xml" value="0.18529411764705883" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/offers_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/product_details_fragment.xml" value="0.25" />
+        <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/layout/saves_fragment.xml" value="0.19010416666666666" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/menu/main_menu.xml" value="0.33" />
         <entry key="..\:/GitHub/FurnitureTask/app/src/main/res/menu/menu_main.xml" value="0.1" />
       </map>
